@@ -3,7 +3,7 @@
     <div class="container">
         <!-- Wellcome Starts -->
         <div class="pull-left">
-            <i class="fa fa-map-o" aria-hidden="true"></i> Sydney NSW 2052, Australia
+            <i class="fa fa-map-o" aria-hidden="true"></i> 1002, General Luna St., Intramuros, Manila
         </div>
         <!-- Wellcome End -->
 
