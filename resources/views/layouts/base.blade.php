@@ -58,6 +58,8 @@
 </header>
 <!-- Header area wrapper End -->
 
+{{-- Picture header section--}}
+
 <!-- Start Content Section -->
 <div class="content error-bg">
     @yield('content')
