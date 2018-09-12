@@ -13,10 +13,10 @@
                 <li><span><i class="fa fa-phone"></i> +61 2 9385 1000</span></li>
                 @guest
                     <li><span><a href="{{ route('login') }}"><i class="fa fa-user"></i> Login</a> / <a
-                                    href="{{ route('register') }}">Register</a></span></li>
+                                href="{{ route('login') }}">Register</a></span></li>
                 @else
-                    <li><span class=""><a href="#">{{ Auth::user()->name }}</a></span></li>
-                    <li><span><a href="#"><span class="fa fa-user-circle"></span><span>Profile</span></a></span></li>
+                    <li><span class=""><a href="#"><span class="fa fa-user-circle"></span><span>{{ Auth::user()->name }}</span></a></span></li>
+                    <li><span><a href="#"><span class="fa fa-id-card"></span><span>Profile</span></a></span></li>
                     {{--<li class="dropdown-menu">
                         <a href="#">{{ Auth::user()->name }}</a>
                         <span class="caret"></span>
@@ -25,6 +25,20 @@
                             <li><a href="{{ route('logout') }}">Log out</a></li>
                         </ul>
                     </li>--}}
+                    <li>
+                        <span>
+                            <a href="{{ route('logout') }}"
+                               onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                          style="display: none;">
+                                        @csrf
+                                    </form>
+                        </span>
+                    </li>
                 @endguest
 
             </ul>
