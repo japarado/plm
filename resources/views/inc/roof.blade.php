@@ -16,7 +16,7 @@
                                     href="{{ route('register') }}">Register</a></span></li>
                 @else
                     <li><span class=""><a href="#">{{ Auth::user()->name }}</a></span></li>
-                    <li><span class="fa-user-circle"></span><span>Profile</span></li>
+                    <li><span><a href="#"><span class="fa fa-user-circle"></span><span>Profile</span></a></span></li>
                     {{--<li class="dropdown-menu">
                         <a href="#">{{ Auth::user()->name }}</a>
                         <span class="caret"></span>
