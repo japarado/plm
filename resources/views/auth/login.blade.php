@@ -4,41 +4,8 @@
     <section id="content">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <h2 class="medium-title">Login</h2>
-
-                    <form method="post" class="login">
-                        <div class="form-group">
-                            <label for="username">Username or email address <span class="required">*</span></label>
-                            <input class="form-control" name="username" id="username" type="text">
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Password <span class="required">*</span></label>
-                            <input class="form-control" name="password" id="password" type="password">
-                        </div>
-                        <div class="form-group">
-                            <label for="rememberme" class="inline">
-                                <input name="rememberme" id="rememberme" type="checkbox">Remember me</label>
-                            <a href="#">Lost your password?</a>
-                        </div>
-                        <button type="submit" id="submit" class="btn btn-common">Login</button>
-                    </form>
-                </div>
-                <div class="col-md-6">
-                    <h2 class="medium-title">Register</h2>
-
-                    <form action="" id="register-form" class="register-form" role="form" method="post">
-                        <div class="form-group">
-                            <label for="username">Email address<span class="required">*</span></label>
-                            <input class="form-control" name="username" id="username" type="text">
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Password <span class="required">*</span></label>
-                            <input class="form-control" name="password" id="password" type="password">
-                        </div>
-                        <button type="submit" id="submit" class="btn btn-common">Register</button>
-                    </form>
-                </div>
+                @include('forms.login')
+                @include('forms.register')
             </div>
         </div>
     </section>
