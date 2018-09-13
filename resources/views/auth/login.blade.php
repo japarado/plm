@@ -12,6 +12,20 @@
     Authentication
 @endsection
 
+{{--Blue Ribbon Sections--}}
+@section('blue-ribbon-left-text')
+    Are you a professor?
+@endsection
+
+@section('blue-ribbon-button-text')
+    Create Professor Account
+@endsection
+
+@section('blue-ribbon-btn-link')
+    #
+@endsection
+{{--End Blue Ribbon Section--}}
+
 @section('content')
     @include('comp.page-header')
     <section id="content">
@@ -24,20 +38,8 @@
     </section>
 
     {{-- Blue Ribbon Section --}}
-    <div class="cta">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-sm-8">
-                    <h3>Are you a Professor?</h3>
-                </div>
-                <div class="col-md-4 col-sm-4">
-                    <a href="#" class="btn btn-border">Create Professor Account</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('comp.blue-ribbon')
     {{--End Blue Ribbon Section--}}
-
 @endsection
 
 {{--
