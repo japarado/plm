@@ -22,18 +22,15 @@
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown dropdown-toggle">
-                    <a class="active" href="index.html" data-toggle="dropdown">Home <i class="fa fa-angle-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a class="active" href="index.html">Home Page 1</a></li>
-                        <li><a href="index-1.html">Home Page 2</a></li>
-                    </ul>
+                    <a class="active" href="index.html" data-toggle="dropdown">Home</a>
                 </li>
                 <li class="dropdown dropdown-toggle">
-                    <a href="#" data-toggle="dropdown">Courses <i class="fa fa-angle-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="courses-list.html">Courses List</a></li>
-                        <li><a href="courses-grid.html">Courses Grid</a></li>
-                        <li><a href="courses-single.html">Single Course</a></li>
+                    <a href="#" data-toggle="dropdown">Colleges<i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu" style="width: 300px;">
+                        <li><a href="#">Engineering and Technology (CET)</a></li>
+                        <li><a href="#">Architecture and Urban Planning (CAUP)</a></li>
+                        <li><a href="#">Physical Therapy (CPT)</a></li>
+                        <li><a href="#">Science (CS)</a></li>
                     </ul>
                 </li>
                 <li class="dropdown dropdown-toggle">
@@ -49,7 +46,7 @@
                         <li><a href="404.html">404</a></li>
                     </ul>
                 </li>
-                <li class="dropdown dropdown-toggle">
+                {{--<li class="dropdown dropdown-toggle">
                     <a href="#" data-toggle="dropdown">Events <i class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu">
                         <li><a href="event-grid.html">Events Grid</a></li>
@@ -129,7 +126,7 @@
                 </ul>
             </li>
             <li><a href="contact.html">Contact</a></li>
-        </ul>
+        </ul>--}}
         <!-- Mobile Menu End -->
     </div>
 </nav>
