@@ -1,5 +1,6 @@
 @extends('layouts.base')
 
+{{----}}
 @section('header-image')
     {{ asset('img/banner1.jpg') }}
 @endsection
