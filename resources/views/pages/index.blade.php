@@ -5,6 +5,9 @@
 @endsection
 
 @section('content')
+    {{--Carousel Start--}}
+    @include('comp.carousel')
+    {{--Carousel End--}}
     <div class="about section">
         <div class="container">
             <div class="row">
