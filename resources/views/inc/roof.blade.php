@@ -34,7 +34,7 @@
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST"
-                                          style="display: none;">
+                                          style="display: none;" class="form-inline">
                                         @csrf
                                     </form>
                         </span>
