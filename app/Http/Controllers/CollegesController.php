@@ -15,7 +15,6 @@ class CollegesController extends Controller
     public function index()
     {
         //
-        $colleges = College::all();
     }
 
     /**

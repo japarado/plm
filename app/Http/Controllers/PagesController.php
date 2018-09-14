@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\College;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -19,7 +20,11 @@ class PagesController extends Controller
     public function index()
     {
         //
-        return view('pages.index');
+        $colleges = College::all();
+
+        $context = ['colleges' => $colleges];
+
+        return view('pages.index')->with($context);
     }
 
     /**
