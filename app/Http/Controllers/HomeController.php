@@ -24,11 +24,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $colleges = College::all();
-
+        $colleges = $this->getColleges();
         $context = ['colleges' => $colleges];
 
         return view('pages.index')->with($context);
-        return view('pages.index');
     }
 }

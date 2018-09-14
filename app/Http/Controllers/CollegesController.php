@@ -47,6 +47,14 @@ class CollegesController extends Controller
     public function show($id)
     {
         //
+        $college = College::find($id);
+        $context =
+            [
+                'colleges' => $this->getColleges(),
+                'college' => $college
+            ];
+
+        return view('colleges.cet')->with($context);
     }
 
     /**
