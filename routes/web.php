@@ -21,8 +21,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //User-defined controllers
 Route::resource('pages','PagesController')->middleware('auth');
-Route::resource('caup','CaupsController')->middleware('auth');
-Route::resource('cet','CetsController')->middleware('auth');
 
 //Routes for testing
 Route::resource('samples','SampleController');

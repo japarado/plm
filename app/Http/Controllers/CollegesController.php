@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\College;
 use Illuminate\Http\Request;
 
-class CaupsController extends Controller
+class CollegesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +15,7 @@ class CaupsController extends Controller
     public function index()
     {
         //
-        return view('colleges.caup.index');
+        $colleges = College::all();
     }
 
     /**
