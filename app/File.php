@@ -9,7 +9,7 @@ class File extends Model
     //
     protected $table = 'file';
 
-    public function professor
+    public function professor()
     {
         return $this->belongsTo(Professor::class);
     }
