@@ -8,6 +8,8 @@ class Professor extends Model
 {
     //
 
+    protected $table = 'professor';
+
     public function user()
     {
         return $this->belongsTo(User::class);
