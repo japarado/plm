@@ -32,10 +32,6 @@
                             @foreach($colleges as $college)
                                 <li><a href="{{ route('colleges.show',$college->id) }}">{{ $college->name }}</a></li>
                             @endforeach
-                            {{--<li><a href="{{ route('cet.index') }}">Engineering and Technology (CET)</a></li>
-                            <li><a href="#">Architecture and Urban Planning (CAUP)</a></li>
-                            <li><a href="#">Physical Therapy (CPT)</a></li>
-                            <li><a href="#">Science (CS)</a></li>--}}
                         </ul>
                     </li>
                     <li class="dropdown dropdown-toggle">
@@ -52,86 +48,6 @@
                         </ul>
                     </li>
                     @endauth
-                    {{--<li class="dropdown dropdown-toggle">
-                        <a href="#" data-toggle="dropdown">Events <i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="event-grid.html">Events Grid</a></li>
-                            <li><a href="event.html">Single Event</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown dropdown-toggle">
-                        <a href="#" data-toggle="dropdown">Blog <i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="blog.html">Blog - Right Sidebar</a></li>
-                            <li><a href="blog-left-sidebar.html">Blog - Left Sidebar</a></li>
-                            <li><a href="blog-full-width.html">Blog - Full Width</a></li>
-                            <li><a href="single-post.html">Blog Single Post</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <!-- Form for navbar search area -->
-            <form class="full-search">
-                <div class="container">
-                    <div class="row">
-                        <input class="form-control" type="text" placeholder="Search">
-                        <a class="close-search">
-                      <span class="fa fa-times">
-                      </span>
-                        </a>
-                    </div>
-                </div>
-            </form>
-            <!-- Search form ends -->
-
-            <!-- Mobile Menu Start -->
-            <ul class="wpb-mobile-menu">
-                <li>
-                    <a class="active" href="index.html">Home</a>
-                    <ul>
-                        <li><a class="active" href="index.html">Home Page 1</a></li>
-                        <li><a href="index-1.html">Home Page 2</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Courses</a>
-                    <ul>
-                        <li><a href="courses-list.html">Courses List</a></li>
-                        <li><a href="courses-grid.html">Courses Grid</a></li>
-                        <li><a href="courses-single.html">Single Course</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Pages</a>
-                    <ul>
-                        <li><a href="about.html">About Page</a></li>
-                        <li><a href="gallery.html">Image Gallery</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="login.html">Login Page</a></li>
-                        <li><a href="single-teacher.html">Single Teacher</a></li>
-                        <li><a href="registration.html">Registration Form</a></li>
-                        <li><a href="contact.html">Contacts</a></li>
-                        <li><a href="404.html">404</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Events</a>
-                    <ul>
-                        <li><a href="event-grid.html">Events Grid</a></li>
-                        <li><a href="event.html">Single Event</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Blog</a>
-                    <ul>
-                        <li><a href="blog.html">Blog - Right Sidebar</a></li>
-                        <li><a href="blog-left-sidebar.html">Blog - Left Sidebar</a></li>
-                        <li><a href="blog-full-width.html">Blog - Full Width</a></li>
-                        <li><a href="single-post.html">Blog Single Post</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact.html">Contact</a></li>--}}
                 </ul>
                 <!-- Mobile Menu End -->
             </div>
