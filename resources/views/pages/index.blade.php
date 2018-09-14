@@ -94,7 +94,7 @@
                         <div class="col-md-7 col-sm-12 col-xs-12">
                             <div class="features-main">
                                 <div class="features-header">
-                                    <h2>What Do We Have For You?</h2>
+                                    <h2>Our Students Deserve Only the Best</h2>
                                     <p>See what the PLM has to offer for academics under its wing.</p>
                                 </div>
                                 <div class="row info">
