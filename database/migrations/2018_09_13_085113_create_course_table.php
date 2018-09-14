@@ -18,6 +18,7 @@ class CreateCourseTable extends Migration
             $table->string('name');
             $table->string('desc')->nullable();
             $table->integer('college_id')->unsigned();
+            $table->integer('duration');
             $table->integer('professor_id')->unsigned();
             $table->timestamps();
 
