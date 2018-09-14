@@ -4,9 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Course extends Model
+class File extends Model
 {
     //
-
-    protected $table = 'course';
+    protected $table = 'file';
 }
