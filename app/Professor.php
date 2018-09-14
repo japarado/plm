@@ -14,4 +14,19 @@ class Professor extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function files()
+    {
+        return $this->hasMany(File::class);
+    }
+
+    public function courses()
+    {
+        return $this->hasMany(Course::class);
+    }
+
+    public function college()
+    {
+        return $this->belongsTo(College::class);
+    }
 }
