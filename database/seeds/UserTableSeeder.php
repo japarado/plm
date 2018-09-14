@@ -13,6 +13,7 @@ class UserTableSeeder extends Seeder
     {
         //
         factory(App\User::class,20)->create();
+        //factory(App\Professor::class,20)->create();
 
         DB::table('users')->insert([
             'name' => 'Ricky James Perez',
@@ -27,6 +28,66 @@ class UserTableSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'Eufemia Garcia',
             'email' => 'egarcia@mail.com',
+            'password' => bcrypt('secret'),
+            'type' => 'PROFESSOR',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s"),
+            'remember_token' => str_random(10),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Khatalayn Mata',
+            'email' => 'kmata@mail.com',
+            'password' => bcrypt('secret'),
+            'type' => 'PROFESSOR',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s"),
+            'remember_token' => str_random(10),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Charlito Molina',
+            'email' => 'cmolina@mail.com',
+            'password' => bcrypt('secret'),
+            'type' => 'PROFESSOR',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s"),
+            'remember_token' => str_random(10),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Paul Valderama',
+            'email' => 'pvalderama@mail.com',
+            'password' => bcrypt('secret'),
+            'type' => 'PROFESSOR',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s"),
+            'remember_token' => str_random(10),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Juan Tallara',
+            'email' => 'jtallara@mail.com',
+            'password' => bcrypt('secret'),
+            'type' => 'PROFESSOR',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s"),
+            'remember_token' => str_random(10),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Clydelle Rondaris',
+            'email' => 'crondaris@mail.com',
+            'password' => bcrypt('secret'),
+            'type' => 'PROFESSOR',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s"),
+            'remember_token' => str_random(10),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Charles Juarizo',
+            'email' => 'cjuarizo@mail.com',
             'password' => bcrypt('secret'),
             'type' => 'PROFESSOR',
             'created_at' => date("Y-m-d H:i:s"),

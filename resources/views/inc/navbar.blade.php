@@ -22,12 +22,12 @@
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown dropdown-toggle">
-                    <a class="active" href="index.html" data-toggle="dropdown">Home</a>
+                    <a class="active" href="{{ route('home') }}">Home</a>
                 </li>
                 <li class="dropdown dropdown-toggle">
                     <a href="#" data-toggle="dropdown">Colleges<i class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu" style="width: 300px;">
-                        <li><a href="#">Engineering and Technology (CET)</a></li>
+                        <li><a href="{{ route('cet.index') }}">Engineering and Technology (CET)</a></li>
                         <li><a href="#">Architecture and Urban Planning (CAUP)</a></li>
                         <li><a href="#">Physical Therapy (CPT)</a></li>
                         <li><a href="#">Science (CS)</a></li>
