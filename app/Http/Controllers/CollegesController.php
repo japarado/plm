@@ -48,13 +48,14 @@ class CollegesController extends Controller
     {
         //
         $college = College::find($id);
+
         $context =
             [
                 'colleges' => $this->getColleges(),
                 'college' => $college
             ];
 
-        return view('colleges.cet')->with($context);
+        return view('colleges.show')->with($context);
     }
 
     /**

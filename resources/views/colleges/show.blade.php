@@ -9,9 +9,10 @@
 @endsection
 
 @section('banner-title')
-    College of Engineering and Technology
+    College of {{ $college->name }}
 @endsection
 
 @section('content')
     @include('comp.page-header')
+
 @endsection
