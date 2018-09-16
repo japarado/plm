@@ -8,5 +8,15 @@
 
 @section('content')
     @include('comp.page-header')
-
+    <section class="courses section">
+        <div class="container">
+            <div class="row">
+                @foreach($professors as $professor)
+                    @foreach($professor->pivot as $course)
+                        @include('comp.course-box')
+                    @endforeach
+                @endforeach
+            </div>
+        </div>
+    </section>
 @endsection

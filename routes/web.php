@@ -22,6 +22,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 //User-defined controllers
 Route::resource('pages','PagesController')->middleware('auth');
 Route::resource('colleges','CollegesController')->middleware('auth');
+Route::resource('professors','ProfessorsController')->middleware('auth');
+
+//course
+Route::get('/courses/{professor_id}/{college_id}','CoursesController@show')->name('courses.show');
 
 //Routes for testing
 Route::resource('samples','SampleController');
