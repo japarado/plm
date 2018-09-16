@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 
 class CourseTableSeeder extends Seeder
 {
@@ -13,15 +12,13 @@ class CourseTableSeeder extends Seeder
     public function run()
     {
         //
-        $colleges = \App\College::all();
+        $colleges = App\College::all();
 
         foreach($colleges as $college)
         {
-            for($x=0;$x<6;$x++)
+            $randomProfessorArray = App\Professor::all()->random(6);
+            foreach($randomProfessorArray as $randomProfessor)
             {
-                //get random professor
-                $randomProfessor = \App\Professor::inRandomOrder()->first();
-                //create a course
                 factory(App\Course::class)->create([
                     'college_id' => $college->id,
                     'professor_id' => $randomProfessor->user_id,

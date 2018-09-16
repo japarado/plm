@@ -14,7 +14,7 @@ class CreateCourseTable extends Migration
     public function up()
     {
         Schema::create('course', function (Blueprint $table) {
-            $table->increments('id');
+            /*$table->increments('id');*/
             $table->string('name')->nullable();
             $table->string('desc')->nullable();
             $table->integer('duration')->nullable();
@@ -25,6 +25,7 @@ class CreateCourseTable extends Migration
 
             $table->foreign('college_id')->references('id')->on('college');
             $table->foreign('professor_id')->references('user_id')->on('professor');
+            $table->primary(['college_id','professor_id']);
         });
     }
 

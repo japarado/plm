@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\College;
+use App\Professor;
+use App\User;
 use Illuminate\Http\Request;
 
 class SampleController extends Controller
@@ -14,7 +17,12 @@ class SampleController extends Controller
     public function index()
     {
         //
-        return view('comp.course-box');
+        $college = College::find(1);
+
+        $professors = $college->professors;
+
+        return $professors[0]->pivot;
+        //return view('sample')->with($context);
     }
 
     /**
