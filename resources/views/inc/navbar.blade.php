@@ -9,16 +9,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{ route('home') }}"><img src="{{ asset('img/logo.png') }}" alt=""></a>
+            <a class="navbar-brand" href="{{ route('home') }}"><img src="{{ asset('img/PLM.png') }}" alt=""></a>
         </div>
         <!-- Brand End -->
 
-        <!-- Search Icon -->
-        <div class="header-search pull-right">
-            <a class="open-search">
-                <i class="fa fa-search"></i>
-            </a>
-        </div>
         <!-- Collapse Navbar -->
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav navbar-right">

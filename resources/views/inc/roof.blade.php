@@ -1,5 +1,5 @@
 <!-- Roof area Starts -->
-<div id="roof" class="hidden-xs">
+<div id="roof" class="hidden-xs" style="background-color: maroon;">
     <div class="container">
         <!-- Wellcome Starts -->
         <div class="pull-left">
@@ -10,7 +10,7 @@
         <!-- Quick Contacts Starts -->
         <div class="quick-contacts pull-right">
             <ul class="list-inline">
-                <li><span><i class="fa fa-phone"></i> +61 2 9385 1000</span></li>
+                <li><span><i class="fa fa-phone"></i> +632 643-2500</span></li>
                 @guest
                     <li><span><a href="{{ route('login') }}"><i class="fa fa-user"></i> Login</a> / <a
                                 href="{{ route('login') }}">Register</a></span></li>
@@ -43,7 +43,7 @@
 
             </ul>
             {{--<span><i class="fa fa-phone"></i> +61 2 9385 1000</span>
-            <span><i class="fa fa-envelope"></i><a href="#">hello@brightuniversity.edu</a></span>
+            <span><i class="fa fa-envelope"></i><a href="#">@plm.edu.ph</a></span>
             @guest
                 <span><a href="{{ route('login') }}"><i class="fa fa-user"></i> Login</a> / <a
                             href="{{ route('register') }}">Register</a></span>
