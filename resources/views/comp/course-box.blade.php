@@ -4,12 +4,12 @@
             <img src="{{ asset('img/courses/img-1.jpg') }}" alt="Picture of course {{ $professor->pivot->name }}">
             <div class="courses-price">
                 <p class="years">Duration</p>
-                <span class="price">{{ $professor->pivot->duraton }}</span>
+                <span class="price">{{ $professor->pivot->duration }} Years</span>
             </div>
         </div>
         <div class="course-detail-wrap">
             <div class="teacher-wrap">
-                <span class="course-instructor">by <a href="#">{{ $professor->user->name }}</a></span>
+                <span class="course-instructor">Chair: <a href="#">{{ $professor->user->name }}</a></span>
                 <img src="{{ asset($professor->user->profile->picture) }}" alt="Picture of {{ $professor->user->name }}">
             </div>
             <div class="course-content">
