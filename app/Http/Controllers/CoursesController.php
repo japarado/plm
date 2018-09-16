@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Course;
 use Illuminate\Http\Request;
 
 class CoursesController extends Controller
@@ -43,9 +44,11 @@ class CoursesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($professor_id,$college_id)
     {
         //
+        $course = Course::where('professor_id','=',$professor_id)
+            ->where('college_id','=',$college_id)->first();
     }
 
     /**
