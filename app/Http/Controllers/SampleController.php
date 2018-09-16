@@ -14,7 +14,7 @@ class SampleController extends Controller
     public function index()
     {
         //
-        return view('layouts.base');
+        return view('comp.course-box');
     }
 
     /**
