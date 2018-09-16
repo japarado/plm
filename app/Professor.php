@@ -20,11 +20,6 @@ class Professor extends Model
         return $this->hasMany(File::class);
     }
 
-    public function courses()
-    {
-        return $this->hasMany(Course::class);
-    }
-
     public function colleges()
     {
         return $this->belongsToMany(College::class);
