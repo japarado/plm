@@ -1,8 +1,6 @@
 @extends('layouts.base')
 
-@section('title')
-    Home
-@endsection
+@section('title','Home')
 
 @section('content')
     {{--Carousel Start--}}
