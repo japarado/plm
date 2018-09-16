@@ -10,6 +10,7 @@ $factory->define(App\Profile::class, function (Faker $faker) {
         'city' => $faker->city,
         'street_address' => $faker->streetAddress,
         'contact_number' => $faker->phoneNumber,
+        'picture' => '/img/general-avatar-icon.png'
         //
     ];
 });

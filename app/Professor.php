@@ -25,8 +25,4 @@ class Professor extends Model
         return $this->hasMany(Course::class);
     }
 
-    public function college()
-    {
-        return $this->belongsTo(College::class);
-    }
 }
