@@ -8,6 +8,7 @@ class Professor extends Model
 {
     //
 
+    protected $primaryKey = 'user_id';
     protected $table = 'professor';
 
     public function user()
@@ -22,10 +23,10 @@ class Professor extends Model
 
     public function colleges()
     {
-        return $this->belongsToMany(College::class, 'course')
-            ->using(Course::class)
-            ->as('courses')
-            ->withPivot('name','desc','duration')
+        return $this->belongsToMany(College::class, 'course', 'professor_id','college_id')
+            /*->using(Course::class)*/
+            /*->as('courses')*/
+            ->withPivot('name','desc','duration','picture')
             ->withTimestamps();
     }
 
