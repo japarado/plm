@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Relations\Pivot;
 class Course extends Pivot
 {
     //
-    protected $primaryKey = ['professor_id','college_id'];
+    //protected $primaryKey = ['professor_id','college_id'];
     protected $table = 'course';
 
     public function professor()

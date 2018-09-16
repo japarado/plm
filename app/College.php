@@ -12,7 +12,7 @@ class College extends Model
     public function professors()
     {
         return $this->belongsToMany(Professor::class, 'course','college_id','professor_id')
-            /*->using(Course::class)*/
+            ->using(Course::class)
             /*->as('courses')*/
             ->withPivot('name','desc','duration','picture')
             ->withTimestamps();

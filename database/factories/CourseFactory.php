@@ -8,6 +8,6 @@ $factory->define(App\Course::class, function (Faker $faker) {
         'name' => 'Course Name',
         'desc' => $faker->paragraph,
         'duration' => 4,
-        'picture' => '/img/courses/img-1.png',
+        'picture' => '/img/courses/img-1.jpg',
     ];
 });

@@ -1,6 +1,9 @@
 <?php
 
+
 use Illuminate\Database\Seeder;
+use Faker\Generator as Faker;
+use Illuminate\Support\Facades\DB;
 
 class CourseTableSeeder extends Seeder
 {
@@ -23,6 +26,14 @@ class CourseTableSeeder extends Seeder
                     'college_id' => $college->id,
                     'professor_id' => $randomProfessor->user_id,
                 ]);
+                /*DB::table('course')->insert([
+                    'name' => 'Course Name',
+                    'desc' => 'Please put course description here. Thanks',
+                    'duration' => 4,
+                    'picture' => '/img/courses/img-1.png',
+                    'college_id' => $college->id,
+                    'professor_id' => $randomProfessor->user_id,
+                ]);*/
             }
         }
     }

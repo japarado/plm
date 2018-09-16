@@ -14,18 +14,18 @@ class CreateCourseTable extends Migration
     public function up()
     {
         Schema::create('course', function (Blueprint $table) {
-            /*$table->increments('id');*/
+            $table->increments('id');
             $table->string('name')->nullable();
             $table->string('desc')->nullable();
             $table->integer('duration')->nullable();
             $table->string('picture')->nullable();
-            $table->integer('college_id')->unsigned()->nullable();
-            $table->integer('professor_id')->unsigned()->nullable();
+            $table->integer('college_id')->unsigned();
+            $table->integer('professor_id')->unsigned();
             $table->timestamps();
 
             $table->foreign('college_id')->references('id')->on('college');
             $table->foreign('professor_id')->references('user_id')->on('professor');
-            $table->primary(['college_id','professor_id']);
+            //$table->primary(['college_id','professor_id']);
         });
     }
 

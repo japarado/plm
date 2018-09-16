@@ -12,9 +12,7 @@
         <div class="container">
             <div class="row">
                 @foreach($professors as $professor)
-                    @foreach($professor->pivot as $course)
-                        @include('comp.course-box')
-                    @endforeach
+                    @include('comp.course-box')
                 @endforeach
             </div>
         </div>
