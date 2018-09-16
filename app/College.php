@@ -13,6 +13,7 @@ class College extends Model
     {
         return $this->belongsToMany(Professor::class)
             ->using(Course::class)
+            ->as('course')
             ->withPivot('name','desc','duration')
             ->withTimestamps();
     }
