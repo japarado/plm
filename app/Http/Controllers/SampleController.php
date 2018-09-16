@@ -18,11 +18,7 @@ class SampleController extends Controller
     {
         //
         $college = College::find(1);
-
-        $professors = $college->professors;
-
-        return $professors[0]->pivot;
-        //return view('sample')->with($context);
+        return view('sample')->with($college);
     }
 
     /**

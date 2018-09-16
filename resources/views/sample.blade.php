@@ -3,5 +3,5 @@
 @section('title','Sample Page')
 
 @section('content')
-    <img src="{{ asset($x->picture)  }}">
+    {{ $college. }}
 @endsection

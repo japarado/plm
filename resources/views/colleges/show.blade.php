@@ -12,7 +12,9 @@
         <div class="container">
             <div class="row">
                 @foreach($professors as $professor)
-                    @include('comp.course-box')
+                    @if($professor->pivot->exists())
+                        @include('comp.course-box')
+                    @endif
                 @endforeach
             </div>
         </div>
