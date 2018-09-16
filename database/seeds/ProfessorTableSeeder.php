@@ -13,7 +13,7 @@ class ProfessorTableSeeder extends Seeder
     public function run()
     {
         //
-        $professors = DB::table('user')->where('type','=','PROFESSOR')->get();
+        $professors = DB::table('users')->where('type','=','PROFESSOR')->get();
 
         foreach($professors as $professor)
         {
