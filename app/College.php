@@ -9,8 +9,5 @@ class College extends Model
     //
     protected $table = 'college';
 
-    public function courses()
-    {
-        return $this->hasMany(Course::class);
-    }
+    
 }
