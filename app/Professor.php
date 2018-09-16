@@ -23,6 +23,7 @@ class Professor extends Model
     public function colleges()
     {
         return $this->belongsToMany(College::class)
+            ->using(Course::class)
             ->withPivot('name','desc','duration')
             ->withTimestamps();
     }

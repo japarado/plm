@@ -2,21 +2,11 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\Pivot;
 
-class Course extends Model
+class Course extends Pivot
 {
     //
 
     protected $table = 'course';
-
-    public function professor()
-    {
-        return $this->belongsTo(Professor::class);
-    }
-
-    public function college()
-    {
-        return $this->belongsTo(College::class);
-    }
 }
