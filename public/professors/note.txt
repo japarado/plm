@@ -1,0 +1,2 @@
+Create a folder corresponding to a professor's name
+put the file (with the exact name in the database) inside same folder
