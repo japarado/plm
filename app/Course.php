@@ -12,7 +12,7 @@ class Course extends Pivot
 
     public function professor()
     {
-        return $this->belongsTo(Professor::class);
+        return $this->belongsTo(Professor::class, 'professor_id', 'user_id');
     }
 
     public function college()

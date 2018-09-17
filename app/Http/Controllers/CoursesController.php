@@ -49,6 +49,17 @@ class CoursesController extends Controller
         //
         $course = Course::where('professor_id','=',$professor_id)
             ->where('college_id','=',$college_id)->first();
+        $professor = $course->professor;
+        $college = $course->college;
+
+        $context = [
+            'course' => $course,
+            'professor' => $professor,
+            'college' => $college,
+            'colleges' => $this->getColleges(),
+        ];
+
+        return view('courses.show')->with($context);
     }
 
     /**

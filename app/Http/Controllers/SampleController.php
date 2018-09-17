@@ -17,8 +17,8 @@ class SampleController extends Controller
     public function index()
     {
         //
-        $college = College::find(1);
-        return view('sample')->with($college);
+
+        return view('comp.single-course')->with(['colleges' => $this->getColleges()]);
     }
 
     /**
