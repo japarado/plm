@@ -17,7 +17,7 @@
                     <a href="{{ route('courses.show',[$professor->pivot->professor_id,$professor->pivot->college_id]) }}">{{ $professor->pivot->name }}</a>
                 </h3>
                 <p></p>
-                <a href="{{ route('courses.show',[$professor->pivot->professor_id,$professor->pivot->college_id]) }}" class="btn btn-common btn-sm">Apply Now</a>
+                <a href="{{ route('courses.show',[$professor->pivot->professor_id,$professor->pivot->college_id]) }}" class="btn btn-common btn-sm">Explore</a>
             </div>
         </div>
     </div>
