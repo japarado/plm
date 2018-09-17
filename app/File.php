@@ -11,6 +11,6 @@ class File extends Model
 
     public function professor()
     {
-        return $this->belongsTo(Professor::class);
+        return $this->belongsTo(Professor::class,'professor_id','user_id');
     }
 }

@@ -18,7 +18,7 @@ class Professor extends Model
 
     public function files()
     {
-        return $this->hasMany(File::class);
+        return $this->hasMany(File::class,'professor_id','user_id');
     }
 
     public function colleges()
