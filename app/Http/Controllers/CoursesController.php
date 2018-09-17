@@ -52,10 +52,13 @@ class CoursesController extends Controller
         $professor = $course->professor;
         $college = $course->college;
 
+        $file_path = "/professors/$professor->name";
+
         $context = [
             'course' => $course,
             'professor' => $professor,
             'college' => $college,
+            'file_path' => $file_path,
             'colleges' => $this->getColleges(),
         ];
 

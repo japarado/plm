@@ -173,7 +173,7 @@
                                         </div>--}}
                                         <div class="widget-content">
                                             <span>Uploaded: {{ $file->created_at }}</span>
-                                            <a href="#">{{ $file->name }}</a>
+                                            <a href="{{ asset($file_path . $file->name) }}">{{ $file->name }}</a>
                                         </div>
                                         <div class="clearfix"></div>
                                     </li>
