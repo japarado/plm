@@ -179,51 +179,9 @@
                                     </li>
                                 @endforeach
                             @endif
-                            {{--<li>
-                                <div class="widget-thumb">
-                                    <a href="#"><img src="assets/img/blog/thumb2.jpg" alt=""/></a>
-                                </div>
-                                <div class="widget-content">
-                                    <span>Jun 1, 2017</span>
-                                    <a href="#">Female Caucasian Insructor</a>
-                                </div>
-                                <div class="clearfix"></div>
-                            </li>
-                            <li>
-                                <div class="widget-thumb">
-                                    <a href="#"><img src="assets/img/blog/thumb2.jpg" alt=""/></a>
-                                </div>
-                                <div class="widget-content">
-                                    <span>Jun 1, 2017</span>
-                                    <a href="#">Female Caucasian Insructor</a>
-                                </div>
-                                <div class="clearfix"></div>
-                            </li>--}}
                         </ul>
                     </div>
-
-                    {{--<div class="widget widget-categories">
-                        <h5 class="widget-title">Categories</h5>
-                        <ul class="cat-list">
-                            <li>
-                                <i class="fa fa-angle-right"></i><a href="#">Freebies</a>
-                            </li>
-                            <li>
-                                <i class="fa fa-angle-right"></i><a href="#">Site Template</a>
-                            </li>
-                            <li>
-                                <i class="fa fa-angle-right"></i><a href="#">Online Market</a>
-                            </li>
-                            <li>
-                                <i class="fa fa-angle-right"></i><a href="#">Typography</a>
-                            </li>
-                            <li>
-                                <i class="fa fa-angle-right"></i><a href="#">Inspirations</a>
-                            </li>
-                        </ul>
-                    </div>--}}
                 </aside>
-
             </div>
         </div>
     </div>
