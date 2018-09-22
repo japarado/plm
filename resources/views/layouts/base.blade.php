@@ -30,24 +30,7 @@
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
 
     <!-- Color CSS Styles  -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/colors/sky.css') }}" media="screen" />
-
-    <!-- jQuery  -->
-    <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/color-switcher.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/jquery.mixitup.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/wow.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/nivo-lightbox.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/jquery.countdown.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/jquery.counterup.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/owl.carousel.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/form-validator.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/contact-form-script.js') }}"></script>
-
-    <script type="text/javascript" src="{{ asset('js/jquery.slicknav.js') }}"></script>
-    <script src="{{ asset('js/main.js') }}"></script>
-
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/colors/sky.css') }}" media="screen"/>
 </head>
 <body>
 
@@ -75,5 +58,21 @@
 <a href="#" class="back-to-top">
     <i class="fa fa-arrow-up"></i>
 </a>
+
+<!-- jQuery  -->
+<script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/color-switcher.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/jquery.mixitup.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/wow.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/nivo-lightbox.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/jquery.countdown.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/jquery.counterup.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/owl.carousel.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/form-validator.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/contact-form-script.js') }}"></script>
+
+<script type="text/javascript" src="{{ asset('js/jquery.slicknav.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
 </body>
 </html>
