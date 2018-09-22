@@ -59,7 +59,6 @@ class CoursesController extends Controller
             'professor' => $professor,
             'college' => $college,
             'file_path' => $file_path,
-            'colleges' => $this->getColleges(),
         ];
 
         return view('courses.show')->with($context);
