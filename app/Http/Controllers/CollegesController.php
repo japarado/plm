@@ -49,7 +49,6 @@ class CollegesController extends Controller
         //
         $college = College::find($id);
         $professors = $college->professors;
-
         $context =
             [
                 'colleges' => $this->getColleges(),
