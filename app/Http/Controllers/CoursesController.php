@@ -70,9 +70,12 @@ class CoursesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($professor_id, $college_id)
     {
         //
+        $course = Course::where('professor_id','=',$professor_id)
+            ->where('college_id','=',$college_id)->first();
+        return view('courses.edit');
     }
 
     /**
