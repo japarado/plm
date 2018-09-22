@@ -20,11 +20,6 @@ class PagesController extends Controller
     public function index()
     {
         //
-        $colleges = College::all();
-
-        $context = ['colleges' => $colleges];
-
-        return view('pages.index')->with($context);
     }
 
     /**

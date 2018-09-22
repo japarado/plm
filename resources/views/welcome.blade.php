@@ -1,3 +1,9 @@
+@extends('layouts.base')
+
+@section('content')
+    @include('auth.login')
+@endsection
+{{--
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
@@ -93,3 +99,4 @@
         </div>
     </body>
 </html>
+--}}

@@ -27,7 +27,8 @@
         </div>
         <div class="form-group">
             <label for="rememberme" class="inline">
-                <input name="remember" id="rememberme" type="checkbox" {{ old('remember') ? 'checked' : '' }}>{{ __('Remember Me') }}</label>
+                <input name="remember" id="rememberme"
+                       type="checkbox" {{ old('remember') ? 'checked' : '' }}>{{ __('Remember Me') }}</label>
             <a href="#">Lost your password?</a>
         </div>
 

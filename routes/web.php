@@ -12,12 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('auth.login');
+    return view('welcome');
 });
 
 //System generated controllers
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
 
 //User-defined controllers
 Route::resource('pages','PagesController')->middleware('auth');
