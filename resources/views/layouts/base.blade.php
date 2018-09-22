@@ -33,15 +33,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/colors/sky.css') }}" media="screen"/>
 </head>
 <body>
-
-<!-- Header area wrapper Starts -->
-<header id="header-wrap">
-    @include('inc.roof')
-    @include('inc.navbar')
-</header>
-<!-- Header area wrapper End -->
-
-{{-- Picture header section--}}
+@include('inc.header')
 
 <!-- Start Content Section -->
 <div class="content error-bg">

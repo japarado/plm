@@ -23,7 +23,7 @@
                     <li class="dropdown dropdown-toggle">
                         <a href="#" data-toggle="dropdown">Colleges<i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu" style="width: 300px;">
-                            @foreach($colleges as $college)
+                            @foreach(App\College::all() as $college)
                                 <li><a href="{{ route('colleges.show',$college->id) }}">{{ $college->name }}</a></li>
                             @endforeach
                         </ul>
