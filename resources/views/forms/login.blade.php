@@ -1,4 +1,4 @@
-<div class="col-md-6">
+<div class="col-md-6 col-md-offset-3">
     <h2 class="medium-title">Login</h2>
 
     <form method="post" class="login" action="{{ route('login') }}">
@@ -35,3 +35,4 @@
         <button type="submit" id="submit" class="btn btn-common">Login</button>
     </form>
 </div>
+
