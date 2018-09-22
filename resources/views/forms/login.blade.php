@@ -29,7 +29,7 @@
             <label for="rememberme" class="inline">
                 <input name="remember" id="rememberme"
                        type="checkbox" {{ old('remember') ? 'checked' : '' }}>{{ __('Remember Me') }}</label>
-            <a href="#">Lost your password?</a>
+            <a href="/password/reset">Lost your password?</a> | <a href="{{ route('register') }}">Sign up</a>
         </div>
 
         <button type="submit" id="submit" class="btn btn-common">Login</button>

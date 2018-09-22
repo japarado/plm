@@ -1,4 +1,4 @@
-<div class="col-md-6">
+<div class="col-md-6 col-md-offset-3">
 
     <h2 class="medium-title">Register</h2>
 
@@ -45,6 +45,7 @@
                 <i class="ti-lock"></i>
                 <input id="password-confirm" type="password" class="form-control" placeholder="Confirm password" name="password_confirmation" required>
             </div>
+            <a href="{{ route('login') }}">Already have an account?</a>
         </div>
         {{--<div class="form-group">
             <label for="username">Email address<span class="required">*</span></label>

@@ -18,7 +18,7 @@ class SampleController extends Controller
     {
         //
 
-        return view('comp.single-course')->with(['colleges' => $this->getColleges()]);
+        return view('sample')->with('user', User::first());
     }
 
     /**

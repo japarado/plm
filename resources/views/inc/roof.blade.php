@@ -13,12 +13,12 @@
                 <li><span><i class="fa fa-phone"></i> +632 643-2500</span></li>
                 @guest
                     <li><span><a href="{{ route('login') }}"><i class="fa fa-user"></i> Login</a> / <a
-                                href="{{ route('login') }}">Register</a></span></li>
+                                href="{{ route('register') }}">Register</a></span></li>
                 @else
                     <li><span class=""><a href="#"><span
                                     class="fa fa-user-circle"></span><span>{{ Auth::user()->name }}</span></a></span>
                     </li>
-                    <li><span><a href="#"><span class="fa fa-id-card"></span><span>Profile</span></a></span></li>
+                    <li><span><a href="{{ route('profiles.show', Auth::user()->id) }}"><span class="fa fa-id-card"></span><span>Profile</span></a></span></li>
                     {{--<li class="dropdown-menu">
                         <a href="#">{{ Auth::user()->name }}</a>
                         <span class="caret"></span>

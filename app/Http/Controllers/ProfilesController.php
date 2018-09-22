@@ -46,6 +46,7 @@ class ProfilesController extends Controller
     public function show($id)
     {
         //
+        return view('profiles.show');
     }
 
     /**
