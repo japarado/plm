@@ -51,7 +51,6 @@ class CollegesController extends Controller
         $professors = $college->professors;
         $context =
             [
-                'colleges' => $this->getColleges(),
                 'college' => $college,
                 'professors' => $professors,
             ];
