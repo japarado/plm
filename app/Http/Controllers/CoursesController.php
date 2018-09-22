@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class CoursesController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -30,7 +35,7 @@ class CoursesController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -41,14 +46,14 @@ class CoursesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
-    public function show($professor_id,$college_id)
+    public function show($professor_id, $college_id)
     {
         //
-        $course = Course::where('professor_id','=',$professor_id)
-            ->where('college_id','=',$college_id)->first();
+        $course = Course::where('professor_id', '=', $professor_id)
+            ->where('college_id', '=', $college_id)->first();
         $professor = $course->professor;
         $college = $course->college;
 
@@ -67,22 +72,30 @@ class CoursesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($professor_id, $college_id)
     {
         //
-        $course = Course::where('professor_id','=',$professor_id)
-            ->where('college_id','=',$college_id)->first();
-        return view('courses.edit');
+
+        if (strcmp(auth()->user()->type, 'PROFESSOR'))
+        {
+            $course = Course::where('professor_id', '=', $professor_id)
+                ->where('college_id', '=', $college_id)->first();
+            return view('courses.edit');
+        }
+        else
+        {
+            return redirect(back());
+        }
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \Illuminate\Http\Request $request
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -93,7 +106,7 @@ class CoursesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
