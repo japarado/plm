@@ -1,7 +1,7 @@
 <div class="col-md-4 col-sm-6 col-xs-12">
     <div class="courses-wrap">
         <div class="thumb">
-            <img src="{{ asset('img/courses/img-1.jpg') }}" alt="Picture of course {{ $professor->pivot->name }}">
+            <img src="{{ asset('img/courses/$professor->pivot->name.jpg') }}" alt="Picture of course {{ $professor->pivot->name }}">
             <div class="courses-price">
                 <p class="years">Duration</p>
                 <span class="price">{{ $professor->pivot->duration }} Years</span>

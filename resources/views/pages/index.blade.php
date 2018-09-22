@@ -20,7 +20,7 @@
                             <i class="fa fa-flash"></i>
                         </div>
                         <h3>Diverse Courses</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, quaerat beatae nulla debitis vitae temporibus enim sed.</p>
+                        <p></p>
                         <a class="btn btn-rm btn-common" href="courses-grid.html">Explore</a>
                     </div>
                 </div>
@@ -30,7 +30,7 @@
                             <i class="fa fa-graduation-cap"></i>
                         </div>
                         <h3>Outstanding Alumni</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, quaerat beatae nulla debitis vitae temporibus enim sed.</p>
+                        <p></p>
                         <a class="btn btn-rm btn-common" href="courses-grid.html">Explore</a>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                             <i class="fa fa-flask"></i>
                         </div>
                         <h3>Innovative Approaches</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, quaerat beatae nulla debitis vitae temporibus enim sed.</p>
+                        <p></p>
                         <a class="btn btn-rm btn-common" href="courses-grid.html">Explore</a>
                     </div>
                 </div>
@@ -56,20 +56,13 @@
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="about-header">
                         <h3 class="medium-title">Welcome Students</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias laudantium nemo
-                            eveniet
-                            excepturi, suscipit amet illo autem quasi, sequi illum quisquam doloremque est magni
-                            accusamus
-                            quo, officia voluptates temporibus cum. Lorem ipsum dolor sit amet, consectetur
-                            adipisicing
-                            elit.</p>
+                        <p></p>
                     </div>
                     <ul class="info-list">
-                        <li><a href="#"><i class="fa fa-check"></i> Narwhal quinoa sriacha organic.</a></li>
-                        <li><a href="#"><i class="fa fa-check"></i> Artisan paleo flannel, polaroid umami
-                                franzen.</a>
+                        <li><a href="#"><i class="fa fa-check"></i> </a></li>
+                        <li><a href="#"><i class="fa fa-check"></i> </a>
                         </li>
-                        <li><a href="#"><i class="fa fa-check"></i> Sriracha vegan typewriter tofu gentrify.</a>
+                        <li><a href="#"><i class="fa fa-check"></i> </a>
                         </li>
                     </ul>
                 </div>
@@ -102,8 +95,7 @@
                                         </div>
                                         <div class="content">
                                             <h3>Skilled Professors</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                Repellendus, quaerat beatae.</p>
+                                            <p></p>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
@@ -112,8 +104,7 @@
                                         </div>
                                         <div class="content">
                                             <h3>Best Infrastructure</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                Repellendus, quaerat beatae.</p>
+                                            <p></p>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
@@ -122,8 +113,7 @@
                                         </div>
                                         <div class="content">
                                             <h3>Well Equiped Labs</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                Repellendus, quaerat beatae.</p>
+                                            <p></p>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
@@ -132,8 +122,7 @@
                                         </div>
                                         <div class="content">
                                             <h3>Big Library</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                Repellendus, quaerat beatae.</p>
+                                            <p></p>
                                         </div>
                                     </div>
                                 </div>

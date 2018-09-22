@@ -5,7 +5,7 @@
 @endsection
 
 @section('header-image')
-    {{ asset('img/banner1.jpg') }}
+    {{ asset('img/KNIGHTS.png') }}
 @endsection
 
 @section('banner-title')
