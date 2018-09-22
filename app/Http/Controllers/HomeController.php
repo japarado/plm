@@ -24,8 +24,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $context = ['colleges' => $this->getColleges()];
-
-        return view('pages.index')->with($context);
+        return view('pages.index');
     }
 }
