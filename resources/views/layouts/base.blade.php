@@ -35,18 +35,11 @@
 <body>
 @include('inc.header')
 
-<!-- Start Content Section -->
 <div class="content error-bg">
     @yield('content')
 </div>
-<!-- End Content Section -->
 
-<footer>
-    @include('inc.footer')
-</footer>
-<!-- Footer Section End-->
-
-<!-- Go To Top Link -->
+@include('inc.footer')
 <a href="#" class="back-to-top">
     <i class="fa fa-arrow-up"></i>
 </a>
