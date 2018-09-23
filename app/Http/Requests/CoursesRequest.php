@@ -13,7 +13,14 @@ class CoursesRequest extends FormRequest
      */
     public function authorize()
     {
-        return auth()->user->type == 'PROFESSOR' ? true : false;
+        if (auth()->user()->type == 'PROFESSOR')
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     /**
@@ -28,7 +35,7 @@ class CoursesRequest extends FormRequest
             'name' => 'required',
             'desc' => 'nullable',
             'duration' => 'numeric',
-            'picture' => 'nulllable|mimes:jpg,jpeg,png,bmp',
+            'picture' => 'nullable|mimes:jpg,jpeg,png,bmp',
             'college_id' => 'required',
             'professor_id' => 'required',
         ];

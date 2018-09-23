@@ -94,7 +94,8 @@ class CoursesController extends Controller
                     'colleges' => $colleges,
                 ];
             return view('courses.edit')->with($context);
-        } else
+        }
+        else
         {
             return redirect()->back();
         }
@@ -109,8 +110,17 @@ class CoursesController extends Controller
      */
     public function update(CoursesRequest $request, $id)
     {
-        //
+        $validated = $request->validated();
 
+        $course = Course::find($id);
+        $course->name = $validated->name;
+        $course->desc = $validated->desc;
+        $course->professor_id = $validated->professor_id;
+        $course->college_id = $validated->college_id;
+
+        $course->save();
+
+        return route('courses.show', $id);
     }
 
     /**
