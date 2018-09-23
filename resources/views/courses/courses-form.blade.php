@@ -33,7 +33,7 @@
 
     <div class="form-group">
         <label for="professor_id">Professor</label>
-        <select id="college_id" name="college_id">
+        <select id="professor_id" name="professor_id">
             @foreach($professors as $professor)
                 @if($course->professor->user_id == $professor->user_id)
                     <option selected value="{{ $professor->user_id }}">{{ $professor->user->name }}</option>

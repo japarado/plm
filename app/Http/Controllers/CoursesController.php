@@ -110,7 +110,7 @@ class CoursesController extends Controller
      */
     public function update(CoursesRequest $request, $id)
     {
-        $validated = $request->validated();
+        /*$validated = $request->validated();
 
         $course = Course::find($id);
         $course->name = $validated->name;
@@ -118,9 +118,11 @@ class CoursesController extends Controller
         $course->professor_id = $validated->professor_id;
         $course->college_id = $validated->college_id;
 
-        $course->save();
+        $course->save();*/
 
-        return route('courses.show', $id);
+        return Course::find($id);
+
+        //return route('courses.show', $id);
     }
 
     /**
