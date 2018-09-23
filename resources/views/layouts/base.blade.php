@@ -59,5 +59,10 @@
 
 <script type="text/javascript" src="{{ asset('js/jquery.slicknav.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
+
+<script src="{{ asset('vendor/unisharp/laravel-ckeditor/ckeditor.js') }}"></script>
+<script>
+    CKEDITOR.replace('summary-ckeditor');
+</script>
 </body>
 </html>
