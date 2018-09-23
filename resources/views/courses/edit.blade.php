@@ -4,5 +4,7 @@
 
 @section('content')
     {{!! Form::open(['action' => ['CoursesController@update', $course->id], 'method' => 'POST','enctype' => 'multipart/form-data']) !!}}
+    @csrf
+
     {{ Form::close() }}
 @endsection
