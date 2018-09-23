@@ -3,6 +3,6 @@
 @section('title', 'Editing ' . $course->name)
 
 @section('content')
-    {{--{{ Form::open(['action' => ['CoursesController@update', [$course->professor_id, $course->college_id]], 'method' => 'post','enctype' => 'multipart/form-data']) }}
-    {{ Form::close() }}--}}
+    {{!! Form::open(['action' => ['CoursesController@update', $course->id], 'method' => 'POST','enctype' => 'multipart/form-data']) !!}}
+    {{ Form::close() }}
 @endsection
