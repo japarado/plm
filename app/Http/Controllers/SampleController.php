@@ -18,7 +18,7 @@ class SampleController extends Controller
     {
         //
 
-        return view('sample')->with('user', User::first());
+        return view('sample');
     }
 
     /**

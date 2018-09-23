@@ -162,6 +162,7 @@ return [
 
         // Custom Providers
         Collective\Html\HtmlServiceProvider::class,
+        Unisharp\Ckeditor\ServiceProvider::class,
 
     ],
 

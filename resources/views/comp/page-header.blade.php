@@ -1,5 +1,3 @@
-@extends('layouts.base')
-
 <div class="page-header" style="background: url(@yield('header-image'));">
     <div class="container">
         <div class="row">

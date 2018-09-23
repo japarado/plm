@@ -1,8 +1,4 @@
-@extends('layouts.base')
-
-@section('content')
-    @include('auth.login')
-@endsection
+@include('auth.login')
 {{--
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">

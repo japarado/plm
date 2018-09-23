@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\College;
 use App\Course;
 use App\Http\Requests\CoursesRequest;
+use App\Professor;
 use Illuminate\Http\Request;
 
 class CoursesController extends Controller
@@ -82,14 +84,17 @@ class CoursesController extends Controller
         if (auth()->user()->type == 'PROFESSOR')
         {
             $course = Course::find($id);
+            $colleges = College::all();
+            $professors = Professor::all();
+
             $context =
                 [
-                    'course' => $course
+                    'course' => $course,
+                    'professors' => $professors,
+                    'colleges' => $colleges,
                 ];
-
             return view('courses.edit')->with($context);
-        }
-        else
+        } else
         {
             return redirect()->back();
         }
