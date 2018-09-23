@@ -49,11 +49,10 @@ class CoursesController extends Controller
      * @param  int $id
      * @return \Illuminate\Http\Response
      */
-    public function show($professor_id, $college_id)
+    public function show($id)
     {
         //
-        $course = Course::where('professor_id', '=', $professor_id)
-            ->where('college_id', '=', $college_id)->first();
+        $course = Course::find($id);
         $professor = $course->professor;
         $college = $course->college;
 
@@ -75,15 +74,13 @@ class CoursesController extends Controller
      * @param  int $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($professor_id, $college_id)
+    public function edit($id)
     {
         //
 
         if (auth()->user()->type == 'PROFESSOR')
         {
-            $course = Course::where('professor_id', '=', $professor_id)
-                ->where('college_id', '=', $college_id)->first();
-
+            $course = Course::find($id);
             $context =
                 [
                     'course' => $course
@@ -104,7 +101,7 @@ class CoursesController extends Controller
      * @param  int $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $professor_id, $college_id)
     {
         //
     }

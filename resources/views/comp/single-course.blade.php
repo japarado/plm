@@ -44,7 +44,7 @@
                         @auth()
                             @if(auth()->user()->type == 'PROFESSOR')
                                 <a class="btn btn-common"
-                                   href="{{ route('courses.edit', array($course->professor_id, $course->college_id)) }}">Edit
+                                   href="{{ route('courses.edit', $course->id) }}">Edit
                                     this Course</a>
                             @endif
                         @endauth

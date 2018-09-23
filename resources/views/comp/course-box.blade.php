@@ -10,14 +10,16 @@
         <div class="course-detail-wrap">
             <div class="teacher-wrap">
                 <span class="course-instructor">Chair: <a href="#">{{ $professor->user->name }}</a></span>
-                <img src="{{ asset($professor->user->profile->picture) }}" alt="Picture of {{ $professor->user->name }}">
+                <img src="{{ asset($professor->user->profile->picture) }}"
+                     alt="Picture of {{ $professor->user->name }}">
             </div>
             <div class="course-content">
                 <h3>
                     <a href="{{ route('courses.show',[$professor->pivot->professor_id,$professor->pivot->college_id]) }}">{{ $professor->pivot->name }}</a>
                 </h3>
                 <p></p>
-                <a href="{{ route('courses.show',[$professor->pivot->professor_id,$professor->pivot->college_id]) }}" class="btn btn-common btn-sm">Explore</a>
+                {{--<a href="{{ route('courses.show',[$professor->pivot->professor_id,$professor->pivot->college_id]) }}" class="btn btn-common btn-sm">Explore</a>--}}
+                <a href="{{ route('courses.show',\App\Course::where('professor_id','=',$professor->user_id)->where('college_id','=',$college->id)->first()->id) }}" class="btn btn-common btn-sm">Explore</a>
             </div>
         </div>
     </div>

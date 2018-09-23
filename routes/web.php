@@ -26,8 +26,9 @@ Route::resource('professors','ProfessorsController')->middleware('auth');
 Route::resource('profiles', 'ProfilesController')->middleware('auth');
 
 //course
-Route::get('/courses/{professor_id}/{college_id}','CoursesController@show')->name('courses.show');
-Route::get('/courses/{professor_id}/{college_id}/edit', 'CoursesController@edit')->name('courses.edit');
+Route::get('/courses/{id}','CoursesController@show')->name('courses.show');
+Route::get('/courses/{id}/edit', 'CoursesController@edit')->name('courses.edit');
+Route::post('/courses/{id}')->name('courses.update');
 
 //Routes for testing
 Route::resource('samples','SampleController');
