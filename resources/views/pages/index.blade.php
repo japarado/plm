@@ -21,7 +21,6 @@
                         </div>
                         <h3>Diverse Courses</h3>
                         <p></p>
-                        <a class="btn btn-rm btn-common" href="courses-grid.html">Explore</a>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
@@ -31,7 +30,6 @@
                         </div>
                         <h3>Outstanding Alumni</h3>
                         <p></p>
-                        <a class="btn btn-rm btn-common" href="courses-grid.html">Explore</a>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
@@ -41,7 +39,6 @@
                         </div>
                         <h3>Innovative Approaches</h3>
                         <p></p>
-                        <a class="btn btn-rm btn-common" href="courses-grid.html">Explore</a>
                     </div>
                 </div>
             </div>

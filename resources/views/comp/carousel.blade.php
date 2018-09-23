@@ -10,42 +10,22 @@
             </li>
         </ol>
         <div class="carousel-inner">
-            <div class="item active" style="background-image: url({{ asset('img/slider/bg-1.jpg') }});">
+            <div class="item active" style="background-image: url({{ asset('img/background/plm.jpg') }});">
                 <div class="carousel-caption">
-                    <p>Pamantasan ng Lungsod ng Maynila</p>
-                    <h1>Credible and Award-Winning<br> Faculty Members</h1>
-                    <a class="btn btn-lg btn-common" href="single-teacher.html">
-                        <i class="fa fa-arrow-circle-right">
-                        </i>
-                        Learn More
-                    </a>
+                    <p style="color:black">Pamantasan ng Lungsod ng Maynila</p>
+                    <h1 style="color:black">Credible and Award-Winning<br> Faculty Members</h1>
                 </div>
             </div>
-            <div class="item" style="background-image: url({{ asset('img/slider/bg-2.jpg') }});">
+            <div class="item" style="background-image: url({{ asset('img/background/plm.jpg') }});">
                 <div class="carousel-caption">
-                    <p>Pamantasan ng Lungsod ng Maynila</p>
-                    <h1>A Rigorous Learning Experience for Students</h1>
-                    <a class="btn btn-lg btn-common" href="contact.html">
-                        <i class="fa fa-check">
-                        </i>
-                        Apply Now
-                    </a>
-                    <a class="btn btn-lg btn-border" href="courses-grid.html">
-                        <i class="fa fa-envelope-open">
-                        </i>
-                        Contact Us
-                    </a>
+                    <p style="color:black">Pamantasan ng Lungsod ng Maynila</p>
+                    <h1 style="color:black">A Rigorous Learning Experience for Students</h1>
                 </div>
             </div>
-            <div class="item" style="background-image: url({{ asset('img/slider/bg-3.jpg') }});">
+            <div class="item" style="background-image: url({{ asset('img/background/plm.jpg') }});">
                 <div class="carousel-caption">
-                    <p>Pamantasan ng Lungsod ng Maynila</p>
-                    <h1>Socially Active and Aware</h1>
-                    <a class="btn btn-lg btn-border" href="event-grid.html">
-                        <i class="fa fa-calendar">
-                        </i>
-                        Upcoming Events
-                    </a>
+                    <p style="color:black">Pamantasan ng Lungsod ng Maynila</p>
+                    <h1 style="color:black">Socially Active and Aware</h1>
                 </div>
             </div>
         </div>
