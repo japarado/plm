@@ -41,7 +41,13 @@
                             <li><span>Duration:</span>{{ $course->duration }}</li>
                             <li><span>Chairperson: </span>{{ $course->professor->user->name }}</li>
                         </ul>
-                        <a class="btn btn-common" href="{{ route('courses.edit', array($course->professor_id, $course->college_id)) }}">Edit this Course</a>
+                        @auth()
+                            @if(auth()->user()->type == 'PROFESSOR')
+                                <a class="btn btn-common"
+                                   href="{{ route('courses.edit', array($course->professor_id, $course->college_id)) }}">Edit
+                                    this Course</a>
+                            @endif
+                        @endauth
                     </div>
 
                     <div class="widget widget-popular-posts">

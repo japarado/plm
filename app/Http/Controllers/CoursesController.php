@@ -79,15 +79,21 @@ class CoursesController extends Controller
     {
         //
 
-        if (strcmp(auth()->user()->type, 'PROFESSOR'))
+        if (auth()->user()->type == 'PROFESSOR')
         {
             $course = Course::where('professor_id', '=', $professor_id)
                 ->where('college_id', '=', $college_id)->first();
-            return view('courses.edit');
+
+            $context =
+                [
+                    'course' => $course
+                ];
+
+            return view('courses.edit')->with($context);
         }
         else
         {
-            return redirect(back());
+            return redirect()->back();
         }
     }
 
