@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Course;
+use App\Http\Requests\CoursesRequest;
 use Illuminate\Http\Request;
 
 class CoursesController extends Controller
@@ -101,9 +102,10 @@ class CoursesController extends Controller
      * @param  int $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(CoursesRequest $request, $id)
     {
         //
+
     }
 
     /**
