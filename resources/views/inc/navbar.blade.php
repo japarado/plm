@@ -14,9 +14,9 @@
         <!-- Brand End -->
 
         <!-- Collapse Navbar -->
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="nav navbar-nav navbar-right">
-                    @auth
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-right">
+                @auth
                     <li class="dropdown dropdown-toggle">
                         <a class="active" href="{{ route('home') }}">Home</a>
                     </li>
@@ -28,22 +28,18 @@
                             @endforeach
                         </ul>
                     </li>
-                    <li class="dropdown dropdown-toggle">
-                        <a href="#" data-toggle="dropdown">Pages <i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="about.html">About Page</a></li>
-                            <li><a href="gallery.html">Image Gallery</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                            <li><a href="login.html">Login Page</a></li>
-                            <li><a href="single-teacher.html">Single Teacher</a></li>
-                            <li><a href="registration.html">Registration Form</a></li>
-                            <li><a href="contact.html">Contacts</a></li>
-                            <li><a href="404.html">404</a></li>
-                        </ul>
-                    </li>
-                    @endauth
-                </ul>
-                <!-- Mobile Menu End -->
-            </div>
+                    @if(Auth::user()->type == 'PROFESSOR')
+                        <li class="dropdown dropdown-toggle">
+                            <a href="#" data-toggle="dropdown">Actions<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ route('courses.create') }}">Create Course</a></li>
+                                <li><a href="{{ route('profiles.create') }}">Upload a File</a></li>
+                            </ul>
+                        </li>
+                    @endif
+                @endauth
+            </ul>
+            <!-- Mobile Menu End -->
+        </div>
     </div>
 </nav>
