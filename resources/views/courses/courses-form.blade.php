@@ -22,6 +22,7 @@
     </div>
 
     <div class="form-group">
+        {{ Form::label('picture', 'Cover Picture') }}
         {{ Form::file('picture') }}
 
         @if ($errors->has('picture'))
