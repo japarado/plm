@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ProfilesRequest;
+use App\Professor;
+use App\Profile;
+use App\User;
 use Illuminate\Http\Request;
 
 class ProfilesController extends Controller
@@ -46,7 +50,19 @@ class ProfilesController extends Controller
     public function show($id)
     {
         //
-        return view('profiles.show');
+        $user = User::find($id);
+        $professor = Professor::find($id);
+        $colleges = $professor->colleges;
+        $profile = Profile::find($id);
+
+        $context = [
+            'profile' => $profile,
+            'user' => $user,
+            'colleges' => $colleges,
+            'professor' => $professor,
+        ];
+
+        return view('profiles.show')->with($context);
     }
 
     /**
@@ -58,6 +74,13 @@ class ProfilesController extends Controller
     public function edit($id)
     {
         //
+        $profile = User::find($id)->profile;
+
+        $context = [
+            'profile' => $profile
+        ];
+
+        return view('profiles.edit')->with($context);
     }
 
     /**
@@ -70,6 +93,16 @@ class ProfilesController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $profile = Profile::find($id);
+        $user = User::find($id);
+
+        $user->name = $request->input('name');
+        $user->save();
+
+        $profile->desc = $request->input('desc');
+        $profile->save();
+        
+        return redirect(route('profiles.show', $id));
     }
 
     /**

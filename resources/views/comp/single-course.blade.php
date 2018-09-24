@@ -48,7 +48,7 @@
                             </div>
                             <div class="des item-inner">
                                 <h3>Description</h3>
-                                <p>{{ $course->desc }}</p>
+                                <p>{!! $course->desc !!}</p>
                             </div>
                             <div class="topics item-inner">
                                 <h3>Topics Included</h3>
@@ -170,6 +170,7 @@
                         </ul>
                         @auth()
                             @if(auth()->user()->type == 'PROFESSOR')
+                                <a class="btn btn-warning" href="{{ route('colleges.show', $course->college->id) }}">Back</a><br/>
                                 <a class="btn btn-common" href="{{ route('courses.edit', $course->id) }}">Edit this
                                     Course</a>
                                 {!!Form::open(['action' => ['CoursesController@destroy', $course->id], 'method' => 'POST'])!!}

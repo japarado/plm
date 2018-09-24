@@ -15,8 +15,8 @@
                     <li><span><a href="{{ route('login') }}"><i class="fa fa-user"></i> Login</a> / <a
                                 href="{{ route('register') }}">Register</a></span></li>
                 @else
-                    <li><span class=""><a href="#"><span
-                                    class="fa fa-user-circle"></span><span>{{ Auth::user()->name }}</span></a></span>
+                    <li><span class="">
+                            <a href="#"><span class="fa fa-user-circle"></span><span>{{ Auth::user()->name }}</span></a></span>
                     </li>
                     <li><span><a href="{{ route('profiles.show', Auth::user()->id) }}"><span class="fa fa-id-card"></span><span>Profile</span></a></span></li>
                     {{--<li class="dropdown-menu">
