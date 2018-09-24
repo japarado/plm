@@ -158,5 +158,11 @@ class CoursesController extends Controller
     public function destroy($id)
     {
         //
+        $course = Course::find($id);
+        $college_id = $course->college->id;
+
+        Course::destroy($id);
+
+        return redirect(route('colleges.show', $college_id));
     }
 }

@@ -170,9 +170,12 @@
                         </ul>
                         @auth()
                             @if(auth()->user()->type == 'PROFESSOR')
-                                <a class="btn btn-common"
-                                   href="{{ route('courses.edit', $course->id) }}">Edit
-                                    this Course</a>
+                                <a class="btn btn-common" href="{{ route('courses.edit', $course->id) }}">Edit this
+                                    Course</a>
+                                {!!Form::open(['action' => ['CoursesController@destroy', $course->id], 'method' => 'POST'])!!}
+                                    {{Form::hidden('_method', 'DELETE')}}
+                                    {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
+                                {!!Form::close()!!}
                             @endif
                         @endauth
                     </div>
