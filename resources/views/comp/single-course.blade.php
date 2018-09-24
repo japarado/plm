@@ -50,35 +50,6 @@
                                 <h3>Description</h3>
                                 <p>{!! $course->desc !!}</p>
                             </div>
-                            <div class="topics item-inner">
-                                <h3>Topics Included</h3>
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <ul>
-                                            <li><i class="fa fa-check"></i> WooCommerce Integration</li>
-                                            <li><i class="fa fa-check"></i> Visual Composer</li>
-                                            <li><i class="fa fa-check"></i> Revolution Slider</li>
-                                            <li><i class="fa fa-check"></i> Custom Drag and Drop Blocks</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <ul>
-                                            <li><i class="fa fa-check"></i> Personal Assistance</li>
-                                            <li><i class="fa fa-check"></i> Standard and Secure Code</li>
-                                            <li><i class="fa fa-check"></i> Validated</li>
-                                            <li><i class="fa fa-check"></i> Latest WordPress Compatible</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <ul>
-                                            <li><i class="fa fa-check"></i> Ajax Galleries</li>
-                                            <li><i class="fa fa-check"></i> Events Management</li>
-                                            <li><i class="fa fa-check"></i> Teachers Management</li>
-                                            <li><i class="fa fa-check"></i> Advanced Options</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="course-topics item-inner">
                                 <h3>Course Content</h3>
 
