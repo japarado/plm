@@ -35,7 +35,7 @@ class CoursesRequest extends FormRequest
             'name' => 'required',
             'desc' => 'nullable',
             'duration' => 'numeric',
-            'picture' => 'nullable|mimes:jpg,jpeg,png,bmp',
+            'picture' => 'image',
             'college_id' => 'required|',
             'professor_id' => 'required|',
         ];

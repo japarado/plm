@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <h2 class="medium-title">Editing {{ $course->name }}</h2>
-                {!! Form::open(['action' => ['CoursesController@update', $course->id], 'method' => 'POST', 'enctpye' => 'multipart/form-data']) !!}
+                {!! Form::open(['action' => ['CoursesController@update', $course->id], 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
                 @csrf
                 <div class="form-group">
                     {{ Form::label('name', 'College Name') }} <span class="required">*</span>
