@@ -59,7 +59,7 @@ class CoursesController extends Controller
         $professor = $course->professor;
         $college = $course->college;
 
-        $file_path = "/professors/$professor->name";
+        $file_path = 'professors/'.$professor->user->name;
 
         $context = [
             'course' => $course,
@@ -110,19 +110,43 @@ class CoursesController extends Controller
      */
     public function update(CoursesRequest $request, $id)
     {
-        /*$validated = $request->validated();
-
         $course = Course::find($id);
-        $course->name = $validated->name;
-        $course->desc = $validated->desc;
-        $course->professor_id = $validated->professor_id;
-        $course->college_id = $validated->college_id;
 
-        $course->save();*/
+        $name = $request->input('name');
+        $desc = $request->input('name');
+        $professor = Professor::find($request->input('professor_id'));
+        $college = College::find($request->input('college_id'));
 
-        return Course::find($id);
+        if($request->hasFile('picture'))
+        {
+            // Get file name with the extension
+            $filenameWithExt = $request->file('picture')->getClientOriginalName();
 
-        //return route('courses.show', $id);
+            // Get just filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+
+            // Get just ext
+            $extension = $request->file('picture')->getClientOriginalExtension();
+
+            // Filename to store
+            $fileNameToStore = $filename.'_'.time().'.'.$extension;
+
+            // Upload image
+            $path = $request->file('picture')->storeAs("public/courses/$course->name/cover_image", $fileNameToStore);
+        }
+        else
+        {
+            $fileNameToStore = 'mfge.jpg';
+        }
+
+        $course->name = $name;
+        $course->desc = $desc;
+        $course->professor_id = $professor->user_id;
+        $course->college_id = $college->id;
+        $course->picture = $fileNameToStore;
+        $course->save();
+
+        return redirect(route('courses.show', $id));
     }
 
     /**
