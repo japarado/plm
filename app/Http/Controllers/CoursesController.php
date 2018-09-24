@@ -56,7 +56,7 @@ class CoursesController extends Controller
         $course = new Course;
 
         $name = $request->input('name');
-        $desc = $request->input('name');
+        $desc = $request->input('desc');
         $professor = Professor::find($request->input('professor_id'));
         $college = College::find($request->input('college_id'));
 
@@ -76,6 +76,10 @@ class CoursesController extends Controller
 
             // Upload image
             $path = $request->file('picture')->storeAs("public/courses/$name/cover_image", $fileNameToStore);
+        }
+        else
+        {
+            $fileNameToStore = 'placeholder.jpg';
         }
 
         $course->name = $name;
@@ -154,7 +158,7 @@ class CoursesController extends Controller
         $course = Course::find($id);
 
         $name = $request->input('name');
-        $desc = $request->input('name');
+        $desc = $request->input('desc');
         $professor = Professor::find($request->input('professor_id'));
         $college = College::find($request->input('college_id'));
 
@@ -174,6 +178,10 @@ class CoursesController extends Controller
 
             // Upload image
             $path = $request->file('picture')->storeAs("public/courses/$course->name/cover_image", $fileNameToStore);
+        }
+        else
+        {
+            $fileNameToStore = 'placeholder.jpg';
         }
 
         $course->name = $name;
