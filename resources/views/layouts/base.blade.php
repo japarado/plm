@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="{{ asset('css/normalize.css') }}">
     <!-- Fonts Awesome -->
     <link rel="stylesheet" href="{{ asset('fonts/font-awesome.min.css') }}">
-    <!-- Color Switcher -->
-    <link rel="stylesheet" href="{{ asset('css/color-switcher.css') }}" type="text/css">
     <!-- Animate CSS -->
     <link rel="stylesheet" href="{{ asset('extras/animate.css') }}" type="text/css">
     <!-- Owl Carousel -->
@@ -47,7 +45,6 @@
 <!-- jQuery  -->
 <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/color-switcher.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/jquery.mixitup.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/wow.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/nivo-lightbox.min.js') }}"></script>
