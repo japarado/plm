@@ -35,9 +35,9 @@ class CoursesRequest extends FormRequest
             'name' => 'required',
             'desc' => 'nullable',
             'duration' => 'numeric',
-            'picture' => 'image',
-            'college_id' => 'required|',
-            'professor_id' => 'required|',
+            'picture' => 'required|image',
+            'college_id' => 'required',
+            'professor_id' => 'required',
         ];
     }
 }
