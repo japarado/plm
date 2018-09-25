@@ -165,7 +165,7 @@
                                         </div>--}}
                                         <div class="widget-content">
                                             <span>Uploaded: {{ $file->created_at }}</span>
-                                            <a href="{{ asset($file_path . $file->name) }}">{{ $file->name }}</a>
+                                            <a href="/public/professors/{{ $professor->user->name }}/files/{{ $file->name }}">{{ $file->name }}</a>
                                         </div>
                                         <div class="clearfix"></div>
                                     </li>
