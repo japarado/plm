@@ -15,7 +15,7 @@
         </div>
         <div class="course-detail-wrap">
             <div class="teacher-wrap">
-                <span class="course-instructor">Chair: <a href="#">{{ $professor->user->name }}</a></span>
+                <span class="course-instructor">Chair: <a href="{{ route('profiles.show', $professor->user_id) }}">{{ $professor->user->name }}</a></span>
                 <img src="{{ asset($professor->user->profile->picture) }}"
                      alt="Picture of {{ $professor->user->name }}">
             </div>

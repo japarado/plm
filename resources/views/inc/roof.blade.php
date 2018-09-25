@@ -18,7 +18,9 @@
                     <li><span class="">
                             <a href="#"><span class="fa fa-user-circle"></span><span>{{ Auth::user()->name }}</span></a></span>
                     </li>
+                    @if(Auth::user()->type == 'PROFESSOR')
                     <li><span><a href="{{ route('profiles.show', Auth::user()->id) }}"><span class="fa fa-id-card"></span><span>Profile</span></a></span></li>
+                    @endif
                     {{--<li class="dropdown-menu">
                         <a href="#">{{ Auth::user()->name }}</a>
                         <span class="caret"></span>
